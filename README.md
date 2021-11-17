@@ -4,34 +4,50 @@
 
 <h4 align="center">도로명주소 업무 시스템 프로젝트 - Backend</h4>
 
+<br />
+<br />
 
 
 
 
-## 📙 Information
+
+
+
+
+
+
+# 📙 Information
+
+
+
+
+
+## **💬 Language**
 
 * [![Java](http://img.shields.io/badge/java-v16.0.2-007396?style=flat&logo=java&logoWidth=25)](https://www.java.com/ko/)
-* ![License](https://img.shields.io/github/license/RWB0104/api.itcode.dev-klid)
-
-<br />
-<br />
 
 
 
 
 
-## 📥 Download
+## **🧱 Framework**
 
-* [최신 릴리즈](https://github.com/RWB0104/api.itcode.dev-klid/releases/latest)
-
-<br />
-<br />
+* [![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoWidth=25)](https://gradle.org/)
 
 
 
 
 
-## 📚 JAVA Dependency
+## **📦 Deploy**
+
+* [![Raspberry Pi](http://img.shields.io/badge/RaspberryPi-F00?style=flat-square&logo=raspberrypi&logoWidth=25&logoColor=FFF)](https://www.raspberrypi.org/)
+* [![Tomcat](http://img.shields.io/badge/Tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoWidth=25&logoColor=000)](http://tomcat.apache.org/)
+
+
+
+
+
+## **📚 JAVA Dependency**
 
 * ![jakarta.servlet-api](https://img.shields.io/badge/jakarta.servlet--api-v5.0.0-blue)
 * ![lombok](https://img.shields.io/badge/lombok-v1.18.20-blue)
@@ -49,7 +65,28 @@
 
 
 
-## 📋 Contents
+
+
+
+
+
+## 📥 Download
+
+* [최신 릴리즈](https://github.com/RWB0104/api.itcode.dev-klid/releases/latest)
+
+<br />
+<br />
+
+
+
+
+
+
+
+
+
+
+# 📋 Contents
 
 비효율적인 사내 업무를 더욱 효율적으로 수행하고자 만든 업무 시스템
 
@@ -57,7 +94,9 @@
 
 
 
-### 1. 설치 방법
+
+
+## 1. 설치 방법
 
 * [도로명주소 업무 시스템 Wiki - Install](https://github.com/RWB0104/api.itcode.dev-klid/wiki/Install)
 
@@ -65,7 +104,9 @@
 
 
 
-### 2. API 명세
+
+
+## 2. API 명세
 
 * [도로명주소 업무 시스템 Wiki - API Documents](https://github.com/RWB0104/api.itcode.dev-klid/wiki/Install)
 
@@ -78,9 +119,14 @@
 
 
 
-## 🌐 Publish
 
-* [OAuth2.0 Project](https://project.itcode.dev/klid)
+
+
+
+
+# 🌐 Publish
+
+* [도로명주소 업무 시스템 Project](https://project.itcode.dev/klid)
 
 <br />
 <br />
@@ -89,7 +135,12 @@
 
 
 
-## 📄 관련 문서
 
-* [도로명주소 업무 시스템 Frontend](https://github.com/RWB0104/klid)
+
+
+
+
+# 📄 관련 문서
+
+* [도로명주소 업무 시스템 - Frontend](https://github.com/RWB0104/klid)
 * [도로명주소 업무 시스템 - Backend Wiki](https://github.com/RWB0104/api.itcode.dev-klid/wiki)
