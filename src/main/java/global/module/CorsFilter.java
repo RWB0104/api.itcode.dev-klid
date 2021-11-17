@@ -29,9 +29,6 @@ public class CorsFilter implements ContainerResponseFilter
 		if (origin != null && (origin.contains("itcode.dev") || origin.contains("localhost")))
 		{
 			responseContext.getHeaders().add("Access-Control-Allow-Origin", origin);
-			responseContext.getHeaders().add("Access-Control-Allow-Credentials", "true");
-			responseContext.getHeaders().add("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
-			responseContext.getHeaders().add("Access-Control-Allow-Headers", "Content-Type");
 		}
 	}
 }

@@ -20,8 +20,7 @@ public class StatisticsAPI extends API
 	 * 통계 자료 응답 메서드
 	 *
 	 * @param year: [int] 연
-	 * @param month: [int] 월
-	 * @param day: [int] 일
+	 * @param week: [int] 주
 	 *
 	 * @return [Response] 통계 자료 객체
 	 */
