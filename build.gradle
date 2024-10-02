@@ -6,7 +6,6 @@ plugins {
 }
 
 group 'api.itcode.dev.klid'
-sourceCompatibility = '19'
 
 repositories {
     mavenCentral()
