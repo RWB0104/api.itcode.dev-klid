@@ -10,7 +10,7 @@ name: klid CI/CD
 on:
   push:
     tags:
-      - *
+      - '*'
 
 jobs:
   build:
