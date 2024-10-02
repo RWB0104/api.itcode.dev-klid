@@ -24,3 +24,5 @@ hs_err_pid*
 
 gradle.properties
 database.properties
+
+.gradle/
