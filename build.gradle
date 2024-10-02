@@ -62,27 +62,3 @@ task exploded(dependsOn: ':war') {
         ant.unzip(src: 'build/libs/' + warName, dest: 'build/exploded')
     }
 }
-
-// 해당 주석 아래의 모든 코드는 자동배포 코드로, 컴파일 시 삭제할 것
-
-remotes {
-    dev {
-        host = project.properties.get('host').toString()
-        port = Integer.parseInt(project.properties.get('port').toString())
-        user = project.properties.get('user').toString()
-        knownHosts = allowAnyHosts
-        identity = file(project.properties.get('identity').toString())
-        passphrase = project.properties.get('passphrase').toString()
-    }
-}
-
-task deploy(dependsOn: ':war') {
-    doLast {
-        println getProject().getBuildDir().toString() + '/libs/' + warName
-        ssh.run {
-            session(remotes.dev) {
-                put from: getProject().getBuildDir().toString() + '/libs/' + warName, into: project.properties.get('deployDir').toString()
-            }
-        }
-    }
-}
