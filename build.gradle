@@ -2,10 +2,11 @@ plugins {
     id 'java'
     id 'war'
     id 'org.hidetake.ssh' version '2.10.1'
+    id 'net.researchgate.release' version '3.0.2'
 }
 
 group 'api.itcode.dev.klid'
-version '1.0-SNAPSHOT'
+version '1.0.0'
 
 repositories {
     mavenCentral()
