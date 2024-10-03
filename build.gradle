@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'war'
-    id 'org.hidetake.ssh' version '2.10.1'
     id 'net.researchgate.release' version '3.0.2'
 }
 
@@ -26,16 +25,16 @@ dependencies {
     implementation group: 'com.oracle.database.jdbc', name: 'ojdbc8', version: '21.3.0.0'
 
     // https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server
-    implementation group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '3.1.8'
 
     // https://mvnrepository.com/artifact/org.glassfish.jersey.containers/jersey-container-servlet
-    implementation group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '3.1.8'
 
     // https://mvnrepository.com/artifact/org.glassfish.jersey.inject/jersey-hk2
-    implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '3.1.8'
 
     // https://mvnrepository.com/artifact/org.glassfish.jersey.media/jersey-media-json-jackson
-    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '3.0.3'
+    implementation group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '3.1.8'
 
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -46,7 +45,7 @@ test {
     useJUnitPlatform()
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
@@ -56,7 +55,8 @@ war {
     archiveFileName.set(warName)
 }
 
-task exploded(dependsOn: ':war') {
+tasks.register('exploded') {
+    dependsOn ':war'
     doLast {
         ant.unzip(src: 'build/libs/' + warName, dest: 'build/exploded')
     }
